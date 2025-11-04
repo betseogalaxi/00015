@@ -7,6 +7,8 @@
   <meta name="keywords" content="mobil bahis, bahis siteleri, betpuan mobil, canlı casino, deneme bonusu, hızlı ödeme">
   <title>BetPuan — En İyi Mobil Bahis Sitesi & Hızlı Kayıt Bonusu 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://royaltoto.click" />
+  
 </head>
 <body class="bg-[#385C8C] text-white font-sans">
 
@@ -59,21 +61,40 @@
       🎁 Hoş geldin bonusu ve düzenli kampanyalarla oyun keyfini artırın. Tüm işlemler lisanslı altyapı ile korunmaktadır.
     </p>
 
-    <p class="text-lg font-semibold mt-6">
-      🔗 Resmi BetPuan bağlantıları:
-    </p>
+<p class="text-lg font-semibold mt-6">
+  🔗 Resmi BetPuan bağlantıları:
+</p>
 
-    <p class="text-md mt-1">
-      <a href="https://betpuanmobil.com" class="underline hover:text-yellow-300 transition" rel="follow">betpuanmobil.com</a> •
-      <a href="https://betpuan.co" class="underline hover:text-yellow-300 transition" rel="follow">betpuan.co</a> •
-      <a href="https://betpuanuyelik.com" class="underline hover:text-yellow-300 transition" rel="follow">betpuanuyelik.com</a> •
-      <a href="https://betpuanguncelgiris.com" class="underline hover:text-yellow-300 transition" rel="follow">betpuanguncelgiris.com
-</a> •
-      <a href="https://bonusbetpuan.com" class="underline hover:text-yellow-300 transition" rel="llow">bonusbetpuan.com</a> •
-      <a href="https://puanbetgiris.com" class="underline hover:text-yellow-300 transition" rel="follow">puanbetgiris.com</a> •
-       <a href="https://girisbetpuan.com" class="underline hover:text-yellow-300 transition" rel="follow">girisbetpuan.com</a> ✅
-    </p>
-  </section>
+<p class="text-md mt-1" id="betpuan-links">
+  <!-- Links will be inserted here by JavaScript -->
+</p>
+</section>
+
+<script>
+  const links = [
+    { href: "https://betpuan.co", text: "betpuan.co" },
+    { href: "https://betpuanguncelgiris.com", text: "betpuanguncelgiris.com" },
+    { href: "https://betpuanmobil.com", text: "betpuanmobil.com" },
+    { href: "https://betpuanuyelik.com", text: "betpuanuyelik.com" },
+    { href: "https://bonusbetpuan.com", text: "bonusbetpuan.com" },
+    { href: "https://girisbetpuan.com", text: "girisbetpuan.com" },
+    { href: "https://puanbetgiris.com", text: "puanbetgiris.com" }
+  ];
+
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const container = document.getElementById('betpuan-links');
+  const shuffled = shuffle([...links]);
+  container.innerHTML = shuffled.map(link =>
+    `<a href="${link.href}" class="underline hover:text-yellow-300 transition" target="_blank" rel="dofollow">${link.text}</a>`
+  ).join(' • ') + ' ✅';
+</script>
 
   <!-- Footer Section -->
   <footer class="bg-[#3F86BE] py-10 text-center text-white">
